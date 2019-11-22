@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.callander.duaazkar.HomeActivity">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dsafs"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dua&amp;Azkar"
+            android:textColor="#290707"
+            android:textSize="35sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dsafs"
+        android:gravity="center"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:background="@drawable/background"
+        android:padding="40dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:scaleType="center"
+            android:id="@+id/imagebutton1"
+            android:src="@drawable/masnoon"
+            android:layout_centerHorizontal="true"
+            android:onClick="Click"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:scaleType="center"
+            android:id="@+id/imagebutton2"
+            android:layout_below="@+id/imagebutton1"
+            android:src="@drawable/quranelaj"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:onClick="Click2"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:scaleType="center"
+            android:id="@+id/imagebutton3"
+            android:layout_below="@+id/imagebutton2"
+            android:src="@drawable/islamiccalenda1r"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:onClick="Click3"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
